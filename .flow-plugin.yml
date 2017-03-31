@@ -1,7 +1,7 @@
 name: objc_unit_test
 version: 0.0.1
 language: objc
-description: Start an iOS emulator, which could run your tests in flow.ci
+description: Start an iOS emulator, which could run your unitTests in flow.ci
 tags:
  - flow
  - plugin

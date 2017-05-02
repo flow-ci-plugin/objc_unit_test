@@ -1,7 +1,7 @@
 name: objc_unit_test
 version: 0.0.1
 language: objc
-description: Start an iOS emulator, which could run your unitTests in flow.ci
+description: "使用模拟器运行您的单元测试"
 tags:
  - flow
  - plugin
@@ -10,7 +10,8 @@ tags:
 
 public: true
 
-# clone_in_docker: false
+inputs:
+
 outputs:
 
 script_path: ./run.sh

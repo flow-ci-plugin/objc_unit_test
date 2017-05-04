@@ -1,20 +1,5 @@
-echo " === run test on simulator"
+echo "==== start to run test by fastlane ===="
 
+FLOW_OBJC_TEST_DEVICE="iPhone 6"
 
-if [ -n "$FLOW_IOS_COMPILE_WORKSPACE" ]; then
-  params="-workspace '$FLOW_IOS_COMPILE_WORKSPACE'"
-fi
-
-if [ -n "$FLOW_IOS_COMPILE_PROJECT" ]; then
-  params="-project '$FLOW_IOS_COMPILE_PROJECT'"
-fi
-
-if [ -n "$FLOW_IOS_COMPILE_SCHEME" ]; then
-  params="$params -scheme '$FLOW_IOS_COMPILE_SCHEME'"
-else
-
-if [ -n "$FLOW_IOS_COMPILE_CONFIGURATION" ]; then
-  params="$params -configuration '$FLOW_IOS_COMPILE_CONFIGURATION'"
-else
-
-xcodebuild test $params -destination 'platform=iOS Simulator,name=iPhone 6' | xcpretty
+fastlane scan $FLOW_FASTLANE_PARAM --device $FLOW_OBJC_TEST_DEVICE --clean

@@ -15,6 +15,7 @@ inputs:
     editable: true    
     desc_cn: "测试设备选择"
     desc_en: "Test device selection"
+    category: select
     options:
       - iPhone 6=iPhone6
     default: "iPhone 6"

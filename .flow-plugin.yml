@@ -17,7 +17,15 @@ inputs:
     desc_en: "Test device selection"
     category: select
     options:
-      - iPhone 6=iPhone6
+      - iPhone 5=iPhone 5
+      - iPhone 5s=iPhone 5s
+      - iPhone 6=iPhone 6
+      - iPhone 6 Plus=iPhone 6 Plus
+      - iPhone 6s=iPhone 6s
+      - iPhone 6s Plus=iPhone 6s Plus
+      - iPhone 7=iPhone 7
+      - iPhone 7 Plus=iPhone 7 Plus
+      - iPhone SE=iPhone SE
     default: "iPhone 6"
 
 outputs:

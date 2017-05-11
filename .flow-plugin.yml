@@ -11,6 +11,18 @@ tags:
 public: true
 
 inputs:
+  - name: FLOW_IOS_TEST_SCHEME
+    editable: true
+    desc_cn: "测试使用的 Scheme, 默认为 build 阶段的设置"
+    desc_en: "Scheme for test phase, default value is used from build"
+    category: "string"
+  
+  - name: FLOW_IOS_TEST_CONFIGURATION
+    editable: true
+    desc_cn: "测试使用的 Configuration, 默认为 build 阶段的设置"
+    desc_en: "Configuration for test phase, default value is used from build"
+    category: "string"
+  
   - name: FLOW_IOS_TEST_DEVICE
     editable: true    
     desc_cn: "测试设备选择"

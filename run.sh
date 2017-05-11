@@ -1,5 +1,5 @@
-echo "==== start to run test by fastlane ===="
+echo "==== This step must added after objc build ===="
 
 echo "selected test device: $FLOW_IOS_TEST_DEVICE"
 
-fastlane scan $FLOW_FASTLANE_PARAM --device $FLOW_IOS_TEST_DEVICE --clean
+fastlane scan $FLOW_IOS_FASTLANE_PARAMS --device $FLOW_IOS_TEST_DEVICE --clean

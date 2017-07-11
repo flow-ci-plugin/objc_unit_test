@@ -14,7 +14,7 @@ fi
 
 echo "selected test device: $FLOW_IOS_TEST_DEVICE"
 
-fastlane scan $FLOW_IOS_FASTLANE_PARAMS --device "'$FLOW_IOS_TEST_DEVICE'" --clean
+fastlane scan $FLOW_IOS_FASTLANE_PARAMS --device "$FLOW_IOS_TEST_DEVICE" --clean
 
 gem install flow_project_manager
 flow_project_manager test_output/report.junit

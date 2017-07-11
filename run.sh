@@ -9,12 +9,12 @@ fi
 if [ -n "$FLOW_IOS_TEST_CONFIGURATION" ]; then
 	FLOW_IOS_FASTLANE_PARAMS="$FLOW_IOS_FASTLANE_PARAMS --configuration $FLOW_IOS_TEST_CONFIGURATION"	
 else
-	FLOW_IOS_FASTLANE_PARAMS="$FLOW_IOS_FASTLANE_PARAMS --configuration $FLOW_IOS_TEST_CONFIGURATION"
+	FLOW_IOS_FASTLANE_PARAMS="$FLOW_IOS_FASTLANE_PARAMS --configuration FLOW_IOS_COMPILE_CONFIGURATION"
 fi
 
 echo "selected test device: $FLOW_IOS_TEST_DEVICE"
 
-fastlane scan $FLOW_IOS_FASTLANE_PARAMS --device '$FLOW_IOS_TEST_DEVICE' --clean
+fastlane scan $FLOW_IOS_FASTLANE_PARAMS --device "'$FLOW_IOS_TEST_DEVICE'" --clean
 
 gem install flow_project_manager
 flow_project_manager test_output/report.junit
